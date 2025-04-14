@@ -20,6 +20,9 @@
   <main class="content">
     <p class="intro">Hier findest du Overlays und Pläne von den R/Place Bauwerken.</p>
 
+    <input type="text" id="searchInput" placeholder="Suche Projekte...">
+
+
     <div class="project-grid">
       <!-- Einzelne Projektkarten -->
       <div class="project-card">
@@ -55,6 +58,7 @@
         <h2>plink</h2>
         <a href="https://xlolmyy.github.io/place/plink/" target="_blank" class="btn">Overlay</a>
         <a href="https://xlolmyy.github.io/place/plan/plink.png" target="_blank" class="btn secondary">Plan</a>
+        <input type="text" value="777, 888" readonly onclick="navigator.clipboard.writeText(this.value)">
       </div>
 
       <div class="project-card">
@@ -64,6 +68,13 @@
         <a href="https://xlolmyy.github.io/place/plan/buh.png" target="_blank" class="btn secondary">Plan</a>
       </div>
     </div>
+
+    <div id="lightbox" style="display:none">
+      <span id="lightbox-close">×</span>
+      <img id="lightbox-img" src="" alt="Lightbox Image">
+  </div>
   </main>
+
+  <script src="test.js"></script>
 </body>
 </html>
